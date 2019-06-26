@@ -11,8 +11,8 @@
         function init() {
             stage = new createjs.Stage("stage-canvas");
             sunShape = new createjs.Shape();
-            sunShape.graphics.beginFill("#F00");
-            sunShape.graphics.drawCircle(25, 0, 25);
+            sunShape.graphics.beginFill(pink);
+            sunShape.graphics.drawCircle(0, 0, 25);
             sunShape.graphics.endFill();
             sunShape.x = 22;
             sunShape.y = 25;
@@ -20,8 +20,8 @@
             createjs.Tween.get(sunShape, {
                 loop: true
             }).to({
-                x: 700,
-                y: 700
+                x: 0,
+                y: 3000
             }, 3000);
             createjs.Ticker.addEventListener("tick", tickHandler);
         }
@@ -40,7 +40,7 @@
         
         canvas {
             border: solid 2px #000;
-            background-color: #fff;
+            background-color: greenyellow;
             display: block;
             margin: 0px auto 0px auto;
             padding-left: 0;
