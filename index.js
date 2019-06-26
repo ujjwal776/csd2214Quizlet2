@@ -10,9 +10,5 @@ function waitingfn(timeinms) {
 
 }
 
-
-waitingfn(3000);
-
-
 debugger;
-console.log("function about to end here");
+waitingfn(3000);
