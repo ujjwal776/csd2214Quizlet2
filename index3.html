@@ -6,17 +6,18 @@
     <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
     <title>Lon Hosford Basic CreateJS Shape Animation</title>
     <script>
-        var stage, sunShape;
+        var stage;
+        var bitmap = new createjs.Bitmap("download.jpg");
 
         function init() {
             stage = new createjs.Stage("stage-canvas");
-            sunShape = new createjs.Shape();
-            sunShape.graphics.beginFill("#F00");
-            sunShape.graphics.drawCircle(0, 0, 25);
-            sunShape.graphics.endFill();
-            sunShape.x = 25;
-            sunShape.y = 25;
-            stage.addChild(sunShape);
+            Bitmap = new createjs.Bitmap("download.jpg");
+            Bitmap.graphics.beginFill("#F00");
+            Bitmap.graphics(500, 0, 25);
+            Bitmap.graphics.endFill();
+            Bitmap.x = 25;
+            Bitmap.y = 25;
+            stage.addChild(Bitmap);
             stage.update();
         }
     </script>
@@ -29,7 +30,7 @@
         
         canvas {
             border: solid 2px #000;
-            background-color: #fff;
+            background-color: greenyellow;
             display: block;
             margin: 0px auto 0px auto;
             padding-left: 0;
